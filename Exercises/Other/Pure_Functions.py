@@ -35,11 +35,21 @@ their_list = (5, 4, 3)
 # REDUCE
 
 
-def accumulator(acc, item):
-    return acc + item
+# def accumulator(acc, item):
+#     return acc + item
 
 
-print(list(reduce(accumulator, my_list, 0)))  # 0 1
+# print(list(reduce(accumulator, my_list, 0)))  # 0 1
 # 1 2
 # 3 3
 # 6
+
+# LAMBDA expressions
+# we only a function for once, then we use LAMBDA functions
+# lambda param: action(param)
+
+print(list(map(lambda item: item*2, my_list)))
+
+print(list(filter(lambda item: item % 2 != 0, my_list)))
+
+print(reduce(lambda acc, item: acc+item,my_list,0))
