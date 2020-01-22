@@ -1,3 +1,6 @@
+'''
+run: Ex_randomgame.py start end
+'''
 from random import randint
 import sys
 
